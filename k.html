@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TikTok Interface</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Barra de navegação -->
+  <nav>
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Explorar</a></li>
+      <li><a href="#">Favoritos</a></li>
+      <li><a href="#">Perfil</a></li>
+    </ul>
+  </nav>
+
+  <!-- Área de exibição de vídeos -->
+  <div id="video-feed">
+    <video src="video1.mp4" controls></video>
+    <video src="video2.mp4" controls></video>
+    <video src="video3.mp4" controls></video>
+  </div>
+
+  <!-- Botões de ação -->
+  <div class="actions">
+    <button id="upload-video">Upload de Vídeo</button>
+    <button id="upload-foto">Upload de Foto</button>
+  </div>
+
+  <!-- Modal de login -->
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="text" placeholder="Nome de usuário">
+        <input type="password" placeholder="Senha">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal de compartilhamento -->
+  <div id="share-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Compartilhar</h2>
+      <!-- Formulário para compartilhar -->
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
